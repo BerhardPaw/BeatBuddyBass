@@ -36,24 +36,30 @@ The "outputPath" holds the BeatBuddy midi output files that can be used with the
 
 The "jsonPath" holds the intermediate JSON files used to generate the midi.
 
-Usage
---------
+Installation
+-------------
 
     $ npm install beatbuddybass
 
 This module generates midi files and is intended for with Node.
 
-Syntax
+Usage
 ---------
 
-Check out the testRunner.js script:
+Have a look at the testRunner.js script:
 
 ```javascript
 var bbBass = require('../lib/beatbuddybass.js');
 var midiFiles = ["Crossroads.mid", "KeyTTHighway.mid", "UnderMyThumb.mid", "highwayChords.mid" ];
 bbBass.createMidi( midiFiles);
 ```
-The 
+
+You can also provide options to createMidi() function, i.e.:
+
+```javascript
+var midiFiles = ["Crossroads.mid", "KeyTTHighway.mid", "UnderMyThumb.mid", "highwayChords.mid" ];
+bbBass.createMidi( "SomeMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
+```
 
 Configuration
 ---------
