@@ -46,18 +46,32 @@ This module generates midi files and is intended for with Node.
 Usage
 ---------
 
-Have a look at the testRunner.js script:
+Write a javascript like this:
 
 ```javascript
-var bbBass = require('../lib/beatbuddybass.js');
-var midiFiles = ["Crossroads.mid", "KeyTTHighway.mid", "UnderMyThumb.mid", "highwayChords.mid" ];
+var bbBass = require('beatbuddybass');
+//
+// Save output in C:\Temp on Windows
+//
+var isWin = /^win/.test(process.platform);
+if ( isWin ) {
+	bbBass.setOutputPath("C:/Temp");
+}
+//
+// Calling with multiple input midifiles
+//
+var midiFiles = ["Crossroads.mid", "KeyTTHighway.mid", "UnderMyThumb.mid"  ];
 bbBass.createMidi( midiFiles);
+//
+// Or calling with a single file and an Option object
+//
+bbBass.createMidi("highwayChords.mid", { verbose: true } ) ;
 ```
 
-You can also provide options to createMidi() function, i.e.:
+Other options can be provided to the createMidi() function, i.e.:
 
 ```javascript
-bbBass.createMidi( "SomeMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
+bbBass.createMidi( "YourMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
 ```
 
 Configuration
