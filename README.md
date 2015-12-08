@@ -6,17 +6,19 @@ Features
 
 This program generates midi files for the BeatBuddy pedal.   
 
-The input files are standard midi files that are marked up in a sequencer. 
-Currently this has only been testing on Cubase 8 midi files where each sections to be extracted are indicated with a named midi-marker and the next marker! 
-Cubase saves these markers in a separate marker track called "Markers" and this program extracts these sections:
+The input files are standard midi files that are marked up in a sequencer.
 
-Sections are named according to the named marker and midi drums and bass notes are extracted until the next named or unnamed midi-marker 
+Currently this has only been testing on Cubase 8 midi files where each sections to be extracted are indicated using a named start midi-marker and an end marker! 
 
-The Drum tracks are extracted and notes are aligned with the BeatBuddy "Rock with Bass Drum Kit" drum map (see the configuration below)
+Cubase saves these markers in a separate marker track called "Markers" and this program extracts parts of the midi file based on these markers:
 
-A Bass track with a name starting with "BASS" is also supported. The bass notes are transposed to fit the bass node samples in the "Rock with Bass Drum Kit" drum map
+* Sections are named according to the named marker and midi drums and bass notes are extracted until the next named or unnamed midi-marker 
 
-The timing is aligned within each of these new extracted midi files  
+* The Drum tracks are extracted and notes are aligned with the BeatBuddy "Rock with Bass Drum Kit" drum map (see the configuration below)
+
+* A Bass track with a name starting with "BASS" is also supported. The bass notes are transposed to fit the bass node samples in the "Rock with Bass Drum Kit" drumkit
+
+The timing is also aligned within each of these new extracted midi files.  
 
 Sample files can be found in (see the configuration below):
 
@@ -27,8 +29,11 @@ Sample files can be found in (see the configuration below):
 			"jsonPath"	: "../examples/jsonFiles"
 		}
 ```
-The "inputPath" holds the full midi input files. Open these files in a sequencer to see the sections are indicated using midi markers.
+
+The "inputPath" holds the full midi input files. Open one or more of these files in a sequencer to see the sections are indicated using midi markers.
+
 The "outputPath" holds the BeatBuddy midi output files that can be used with the BBManager. 
+
 The "jsonPath" holds the intermediate JSON files used to generate the midi.
 
 Usage
@@ -52,8 +57,9 @@ The
 
 Configuration
 ---------
-The program comes with a configuration file, config.js, that defines the BeatBuddy rockDrumsWithBass drum map, a template 
-for the midi zero track to be added to each generated midi file and directory paths, relative or absolute, for the input and output directories:
+
+The program comes with a configuration file, config.js, that defines the BeatBuddy rockDrumsWithBass drum map plus a template 
+for the midi zero track to be added to each generated midi file and the directory paths, relative or absolute, for the input and output directories:
 
 ```javascript
 module.exports = {
