@@ -1,0 +1,27 @@
+{
+  "name": "BeatBuddyBass",
+  "version": "1.0.0",
+  "description": "Parses Midifiles with drums, bass and midi markers to produce a set of BeatBuddy midifiles (e.g. intro, verse, outtro etc.)",
+  "main": "lib/beatbuddybass.js",
+  "dependencies": {
+    "jsonpath": "^0.2.2",
+    "midi-converter": "^0.1.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/testRunner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "BeatBuddyBass"
+  },
+  "keywords": [
+    "BeatBuddy",
+    "Midi",
+    "Bass",
+    "Drums"
+  ],
+  "author": "Claus Fjelloe-Jensen <claus.fjello@gmail.com>",
+  "license": "ISC"
+}

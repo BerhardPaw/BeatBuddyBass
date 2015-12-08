@@ -1,0 +1,73 @@
+[
+	{
+		"deltaTime": 0,
+		"type": "meta",
+		"subtype": "trackName",
+		"text": "Markers",
+		"realTime": 0,
+		"sortKey": 0
+	},
+	{
+		"deltaTime": 0,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "Intro",
+		"realTime": 0,
+		"sortKey": 1,
+		"drumTrack": [],
+		"bassTrack": []
+	},
+	{
+		"deltaTime": 26880,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "Verse1",
+		"realTime": 26880,
+		"sortKey": 2,
+		"drumTrack": [],
+		"bassTrack": []
+	},
+	{
+		"deltaTime": 23040,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "Verse2",
+		"realTime": 49920,
+		"sortKey": 3,
+		"drumTrack": [],
+		"bassTrack": []
+	},
+	{
+		"deltaTime": 23040,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "",
+		"realTime": 72960,
+		"sortKey": 4
+	},
+	{
+		"deltaTime": 176640,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "Outro",
+		"realTime": 249600,
+		"sortKey": 5,
+		"drumTrack": [],
+		"bassTrack": []
+	},
+	{
+		"deltaTime": 8640,
+		"type": "meta",
+		"subtype": "marker",
+		"text": "",
+		"realTime": 258240,
+		"sortKey": 6
+	},
+	{
+		"deltaTime": 0,
+		"type": "meta",
+		"subtype": "endOfTrack",
+		"realTime": 258240,
+		"sortKey": 7
+	}
+]
