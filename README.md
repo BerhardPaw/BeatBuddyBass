@@ -57,7 +57,6 @@ bbBass.createMidi( midiFiles);
 You can also provide options to createMidi() function, i.e.:
 
 ```javascript
-var midiFiles = ["Crossroads.mid", "KeyTTHighway.mid", "UnderMyThumb.mid", "highwayChords.mid" ];
 bbBass.createMidi( "SomeMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
 ```
 
