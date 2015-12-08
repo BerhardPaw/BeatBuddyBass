@@ -8,7 +8,7 @@ This program generates midi files for the BeatBuddy pedal.
 
 The input files are standard midi files that are marked up in a sequencer.
 
-Currently this has only been testing on Cubase 8 midi files where each sections to be extracted are indicated using a named start midi-marker and an end marker! 
+Currently this has only been tested on a few Cubase 8 midi files where each sections to be extracted are indicated using a named start midi-marker and an end marker! 
 
 Cubase saves these markers in a separate marker track called "Markers" and this program extracts parts of the midi file based on these markers:
 
