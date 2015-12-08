@@ -10,10 +10,13 @@ The input files are standard midi files that are marked up in a sequencer.
 Currently this has only been testing on Cubase 8 midi files where each sections to be extracted are indicated with a named midi-marker and the next marker! 
 Cubase saves these markers in a separate marker track called "Markers" and this program extracts these sections:
 
-## Sections are named according to the named marker and midi drums and bass notes are extracted until the next named or unnamed midi-marker 
-## The Drum tracks are extracted and notes are aligned with the BeatBuddy "Rock with Bass Drum Kit" drum map (see the configuration below)
-## A Bass track with a name starting with "BASS" is also supported. The bass notes are transposed to fit the bass node samples in the "Rock with Bass Drum Kit" drum map
-## The timing is aligned within each of these new extracted midi files  
+Sections are named according to the named marker and midi drums and bass notes are extracted until the next named or unnamed midi-marker 
+
+The Drum tracks are extracted and notes are aligned with the BeatBuddy "Rock with Bass Drum Kit" drum map (see the configuration below)
+
+A Bass track with a name starting with "BASS" is also supported. The bass notes are transposed to fit the bass node samples in the "Rock with Bass Drum Kit" drum map
+
+The timing is aligned within each of these new extracted midi files  
 
 Sample files can be found in (see the configuration below):
 
