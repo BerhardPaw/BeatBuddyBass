@@ -136,9 +136,9 @@ module.exports = {
 					}
 		},
 		"directory": {
-			"inputPath"	: "../examples/midiFilesIn",
-			"outputPath": "../examples/beatBuddyMidi",
-			"jsonPath"	: "../examples/jsonFiles"
+			"inputPath"	: "examples/midiFilesIn",
+			"outputPath": "examples/beatBuddyMidi",
+			"jsonPath"	: "examples/jsonFiles"
 		}
 	}
 };
