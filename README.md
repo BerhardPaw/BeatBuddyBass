@@ -1,4 +1,5 @@
 # BeatBuddyBass - ALPHA version
+
 Generates BeatBuddy midi files for the BeatBuddy "Rock with Bass Drum Kit" based on standard midi files with Markers indicating what parts to use.
 
 Features

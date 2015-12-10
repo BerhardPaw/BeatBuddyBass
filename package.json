@@ -1,6 +1,6 @@
 {
   "name": "beatbuddybass",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Parses Midifiles with drums, bass and midi markers to produce a set of BeatBuddy midifiles (e.g. intro, verse, outtro etc.)",
   "main": "lib/beatbuddybass.js",
   "dependencies": {
