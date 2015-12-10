@@ -1,4 +1,4 @@
-# BeatBuddyBass - ALPHA version -- NOT READY FOR NPM PUBLISHING YET
+# BeatBuddyBass - ALPHA version
 Generates BeatBuddy midi files for the BeatBuddy "Rock with Bass Drum Kit" based on standard midi files with Markers indicating what parts to use.
 
 Features
@@ -24,9 +24,9 @@ Sample files can be found in (see the configuration below):
 
 ```javascript
 "directory": {
-			"inputPath"	: "../examples/midiFilesIn",
-			"outputPath": "../examples/beatBuddyMidi",
-			"jsonPath"	: "../examples/jsonFiles"
+			"inputPath"	: "examples/midiFilesIn",
+			"outputPath": "examples/beatBuddyMidi",
+			"jsonPath"	: "examples/jsonFiles"
 		}
 ```
 
@@ -68,11 +68,15 @@ bbBass.createMidi( midiFiles);
 bbBass.createMidi("highwayChords.mid", { verbose: true } ) ;
 ```
 
-Other options can be provided to the createMidi() function, i.e.:
+You can specify other options like bass and drums channel the createMidi() function, i.e.:
 
 ```javascript
 bbBass.createMidi( "YourMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
 ```
+For the bass channel and the drums channel you should provide the channel numbers shown in you sequencer.
+The bassTranspose can be used to transpose the bass, but be aware that you bass notes must fit within the 2 octaves available within the
+"Rock with Bass Drum Kit", both before and after you transpose it.
+
 
 Configuration
 ---------
