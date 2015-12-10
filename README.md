@@ -47,7 +47,7 @@ This module generates midi files and is intended for with Node.
 Usage
 ---------
 
-Write a javascript like this:
+Write a javascript ("runBBB.js") like this:
 
 ```javascript
 var bbBass = require('beatbuddybass');
@@ -69,11 +69,17 @@ bbBass.createMidi( midiFiles);
 bbBass.createMidi("highwayChords.mid", { verbose: true } ) ;
 ```
 
+Now run the script:
+```javascript
+node runBBB.js
+```
+
 You can specify other options like bass and drums channel the createMidi() function, i.e.:
 
 ```javascript
 bbBass.createMidi( "YourMidiFile.mid", { bassCh: 4, drumsCh: 10, bassTranspose: 2 } );
 ```
+
 For the bass channel and the drums channel you should provide the channel numbers shown in you sequencer.
 The bassTranspose can be used to transpose the bass, but be aware that you bass notes must fit within the 2 octaves available within the
 "Rock with Bass Drum Kit", both before and after you transpose it.
